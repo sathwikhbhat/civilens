@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 
 @Service
-public class PersonaServiceImpl implements PersonaService{
+public class PersonaServiceImpl implements PersonaService {
 
     private final PersonaRepository personaRepository;
 

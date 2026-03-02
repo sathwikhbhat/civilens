@@ -1,8 +1,8 @@
 package com.databaes.civilens.persona.model.occupation;
 
-import com.databaes.civilens.persona.model.embedded.LandHolding;
 import com.databaes.civilens.common.enums.farmer.CropCategory;
 import com.databaes.civilens.common.enums.farmer.IrrigationType;
+import com.databaes.civilens.persona.model.embedded.LandHolding;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
