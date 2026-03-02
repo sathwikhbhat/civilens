@@ -3,23 +3,18 @@ package com.databaes.civilens.persona.model.occupation;
 import com.databaes.civilens.common.enums.student.EducationLevel;
 import com.databaes.civilens.common.enums.student.InstitutionType;
 import com.databaes.civilens.common.enums.student.StreamType;
-import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
-@Schema(description = "Details specific to student occupation")
 public class StudentDetails extends OccupationDetails {
 
-    @NotNull
-    @Schema(description = "Current education level", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotNull(message = "Education level is required")
     private EducationLevel educationLevel;
 
-    @NotNull
-    @Schema(description = "Type of educational institution", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotNull(message = "Institution type is required")
     private InstitutionType institutionType;
 
-    @NotNull
-    @Schema(description = "Academic stream or field of study", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotNull(message = "Stream is required")
     private StreamType stream;
 }
