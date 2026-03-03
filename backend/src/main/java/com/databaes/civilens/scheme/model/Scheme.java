@@ -1,12 +1,12 @@
 package com.databaes.civilens.scheme.model;
 
 import com.databaes.civilens.common.enums.core.ApplicationMode;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.*;
 import java.time.Instant;
 import java.util.List;
 

@@ -1,9 +1,10 @@
 package com.databaes.civilens.scheme.model;
 
 import com.databaes.civilens.common.enums.core.IncomeBracket;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Data

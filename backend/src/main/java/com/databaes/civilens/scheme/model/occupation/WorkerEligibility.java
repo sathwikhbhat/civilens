@@ -2,9 +2,10 @@ package com.databaes.civilens.scheme.model.occupation;
 
 import com.databaes.civilens.common.enums.selfemployed.EmploymentCategory;
 import com.databaes.civilens.common.enums.selfemployed.IndustryType;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Data

@@ -1,9 +1,9 @@
 package com.databaes.civilens.scheme.model.embedded;
 
 import com.databaes.civilens.common.enums.farmer.LandUnit;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
-
-import jakarta.validation.constraints.*;
 
 @Data
 public class LandHoldingRange {

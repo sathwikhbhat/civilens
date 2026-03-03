@@ -1,9 +1,8 @@
 package com.databaes.civilens.scheme.model;
 
-import lombok.Data;
-
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
 @Data
 public class Eligibility {

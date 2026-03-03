@@ -3,10 +3,11 @@ package com.databaes.civilens.scheme.model.occupation;
 import com.databaes.civilens.common.enums.farmer.CropCategory;
 import com.databaes.civilens.common.enums.farmer.IrrigationType;
 import com.databaes.civilens.scheme.model.embedded.LandHoldingRange;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Data

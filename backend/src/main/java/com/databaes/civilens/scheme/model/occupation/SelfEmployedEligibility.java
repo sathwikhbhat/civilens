@@ -3,9 +3,10 @@ package com.databaes.civilens.scheme.model.occupation;
 import com.databaes.civilens.common.enums.worker.AnnualTurnoverBracket;
 import com.databaes.civilens.common.enums.worker.EnterpriseSize;
 import com.databaes.civilens.common.enums.worker.Sector;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Data

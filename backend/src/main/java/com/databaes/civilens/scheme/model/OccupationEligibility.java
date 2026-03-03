@@ -5,10 +5,10 @@ import com.databaes.civilens.scheme.model.occupation.FarmerEligibility;
 import com.databaes.civilens.scheme.model.occupation.SelfEmployedEligibility;
 import com.databaes.civilens.scheme.model.occupation.StudentEligibility;
 import com.databaes.civilens.scheme.model.occupation.WorkerEligibility;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import jakarta.validation.constraints.*;
-import jakarta.validation.Valid;
 import java.util.List;
 
 @Data

@@ -2,9 +2,12 @@ package com.databaes.civilens.scheme.model;
 
 import com.databaes.civilens.common.enums.core.Category;
 import com.databaes.civilens.common.enums.core.Gender;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
-import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Data
