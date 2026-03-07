@@ -4,10 +4,10 @@ import path from "path";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 
-dotenv.config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, "../../../.env") });
 
 const app = express();
 app.use(express.json());
@@ -123,7 +123,13 @@ app.get("/", (req, res) => {
 
 app.post("/vector-search", async (req, res) => {
 
-  const persona = req.body;
+  const body = req.body;
+  const persona = {
+    occupation: body.occupation?.type,
+    incomeBracket: body.economic?.incomeBracket,
+    state: body.geographic?.state,
+    age: body.demographics?.age
+  };
 
   /*
   --------------------------------
