@@ -1,0 +1,73 @@
+{
+    "id": "1014",
+    "schemeId": "SCH_14",
+    "title": "Women Textile Worker Maternity Benefit",
+    "category": "WORKER",
+    "officialLink": "https://example.gov.in/sch_14",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "6 months of paid maternity leave equivalent for female workers in the unorganized textile sector.",
+    "semanticContent": "Ensures health and nutritional support for pregnant and lactating women working in informal textile units where statutory maternity benefits don't apply.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "FEMALE"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL",
+                "URBAN"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "WORKER"
+            ],
+            "workerEligibility": {
+                "allowedEmploymentCategories": [
+                    "UNORGANISED",
+                    "UNORGANISED"
+                ],
+                "allowedIndustryTypes": [
+                    "TEXTILE"
+                ],
+                "migrantWorkerRequired": false
+            }
+        }
+    },
+    "benefits": {
+        "type": "FINANCIAL_ASSISTANCE",
+        "description": "Minimum wage equivalent for 6 months transferred to bank"
+    },
+    "documentsRequired": [
+        "Aadhar Card",
+        "Medical Certificate of Pregnancy",
+        "Self-Declaration of Work"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}

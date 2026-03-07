@@ -1,0 +1,78 @@
+{
+    "id": "1005",
+    "schemeId": "SCH_5",
+    "title": "Tractor & Farm Mechanization Subsidy",
+    "category": "FARMER",
+    "officialLink": "https://example.gov.in/sch_5",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "Up to 30% subsidy on the purchase of new tractors for group farming.",
+    "semanticContent": "Designed to improve farm mechanization. Groups of minimum 3 farmers can apply jointly for a subsidy to purchase a tractor or heavy farm machinery.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "MALE",
+                "FEMALE",
+                "OTHER"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL",
+                "URBAN"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "FARMER"
+            ],
+            "farmerEligibility": {
+                "landHolding": {
+                    "min": 2.0,
+                    "max": 10.0,
+                    "unit": "HECTARE"
+                },
+                "allowedIrrigationTypes": [
+                    "ANY"
+                ],
+                "allowedPrimaryCropCategories": [
+                    "ANY"
+                ]
+            }
+        }
+    },
+    "benefits": {
+        "type": "SUBSIDY",
+        "description": "30% of tractor cost, capped at Rs. 2.5 Lakhs"
+    },
+    "documentsRequired": [
+        "Aadhar Cards of all members",
+        "Joint Bank Account",
+        "Dealer Quotation"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}

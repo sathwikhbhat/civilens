@@ -53,7 +53,7 @@ LOAD SCHEMES
 --------------------------------
 */
 
-const schemesFolder = path.join(__dirname, "../../../data/schemes");
+const schemesFolder = path.join(__dirname, "schemes");
 
 const schemeFiles = fs.readdirSync(schemesFolder);
 

@@ -1,0 +1,81 @@
+{
+    "id": "1019",
+    "schemeId": "SCH_19",
+    "title": "Small Business GST Compliance Support",
+    "category": "SELF_EMPLOYED",
+    "officialLink": "https://example.gov.in/sch_19",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "Reimbursement of accounting software costs for small businesses transitioning to formal GST.",
+    "semanticContent": "Helps small shopkeepers and traders digitize their billing and inventory to easily comply with GST regulations.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "MALE",
+                "FEMALE",
+                "OTHER"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL",
+                "URBAN"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "SELF_EMPLOYED"
+            ],
+            "selfEmployedEligibility": {
+                "allowedSectors": [
+                    "RETAIL",
+                    "RETAIL"
+                ],
+                "minYearsOperational": 1,
+                "maxYearsOperational": 20,
+                "allowedEnterpriseSizes": [
+                    "MICRO",
+                    "SMALL"
+                ],
+                "allowedTurnoverBrackets": [
+                    "FIVE_TO_10L",
+                    "TEN_TO_50L"
+                ]
+            }
+        }
+    },
+    "benefits": {
+        "type": "SUBSIDY",
+        "description": "Reimbursement of up to Rs. 5000 for verified accounting software"
+    },
+    "documentsRequired": [
+        "Aadhar Card",
+        "GSTIN Certificate",
+        "Software Purchase Invoice"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}

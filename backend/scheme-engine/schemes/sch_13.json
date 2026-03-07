@@ -1,0 +1,75 @@
+{
+    "id": "1013",
+    "schemeId": "SCH_13",
+    "title": "Migrant Labour Transit Housing",
+    "category": "WORKER",
+    "officialLink": "https://example.gov.in/sch_13",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "Subsidized short-term rental housing for migrant workers in major industrial hubs.",
+    "semanticContent": "Provides safe and affordable dormitory housing for migrant laborers arriving in new cities for work.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "MALE",
+                "FEMALE",
+                "OTHER"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL",
+                "URBAN"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "WORKER"
+            ],
+            "workerEligibility": {
+                "allowedEmploymentCategories": [
+                    "ANY"
+                ],
+                "allowedIndustryTypes": [
+                    "MANUFACTURING",
+                    "CONSTRUCTION"
+                ],
+                "migrantWorkerRequired": true
+            }
+        }
+    },
+    "benefits": {
+        "type": "SUBSIDY",
+        "description": "Dormitory bed at Rs. 50/day including utilities"
+    },
+    "documentsRequired": [
+        "Aadhar Card",
+        "Proof of Origin State",
+        "Employer Letter (if any)"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}

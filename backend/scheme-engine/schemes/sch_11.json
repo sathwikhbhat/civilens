@@ -1,0 +1,76 @@
+{
+    "id": "1011",
+    "schemeId": "SCH_11",
+    "title": "Urban Street Vendor Low-Interest Credit",
+    "category": "WORKER",
+    "officialLink": "https://example.gov.in/sch_11",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "Collateral-free working capital loan of up to Rs. 10,000 for street vendors.",
+    "semanticContent": "Provides immediate liquidity to street vendors to restart or expand their businesses post disruptions. Prompt repayment leads to interest subsidy.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "MALE",
+                "FEMALE",
+                "OTHER"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL",
+                "URBAN"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "WORKER"
+            ],
+            "workerEligibility": {
+                "allowedEmploymentCategories": [
+                    "UNORGANISED",
+                    "STREET_VENDOR"
+                ],
+                "allowedIndustryTypes": [
+                    "RETAIL",
+                    "OTHER"
+                ],
+                "migrantWorkerRequired": false
+            }
+        }
+    },
+    "benefits": {
+        "type": "LOAN",
+        "description": "Up to Rs. 10,000 working capital loan @ 7% interest subsidy"
+    },
+    "documentsRequired": [
+        "Aadhar Card",
+        "Vendor Certificate/ID",
+        "Bank Passbook"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}

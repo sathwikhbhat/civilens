@@ -1,0 +1,76 @@
+{
+    "id": "1010",
+    "schemeId": "SCH_10",
+    "title": "Hostel Subsidy for Rural Students",
+    "category": "STUDENT",
+    "officialLink": "https://example.gov.in/sch_10",
+    "sourcePortal": "Central Govt Portal",
+    "summary": "Monthly allowance to cover hostel fees for rural students studying in urban colleges.",
+    "semanticContent": "Helps students from rural areas manage the high cost of living when they relocate to urban centers for higher education.",
+    "eligibility": {
+        "demographics": {
+            "minAge": 18,
+            "maxAge": 60,
+            "allowedGenders": [
+                "MALE",
+                "FEMALE",
+                "OTHER"
+            ],
+            "allowedCategories": [
+                "GENERAL",
+                "OBC",
+                "SC",
+                "ST"
+            ],
+            "minFamilySize": 1,
+            "maxFamilySize": 10
+        },
+        "economic": {
+            "allowedIncomeBrackets": [
+                "ONE_TO_3L",
+                "THREE_TO_5L"
+            ],
+            "bplRequired": false
+        },
+        "geographic": {
+            "allowedStates": [
+                "ANY"
+            ],
+            "allowedDistricts": [
+                "ANY"
+            ],
+            "allowedAreaTypes": [
+                "RURAL"
+            ]
+        },
+        "occupation": {
+            "allowedTypes": [
+                "STUDENT"
+            ],
+            "studentEligibility": {
+                "allowedEducationLevels": [
+                    "UG",
+                    "PG"
+                ],
+                "allowedInstitutionTypes": [
+                    "ANY"
+                ],
+                "allowedStreams": [
+                    "ANY"
+                ]
+            }
+        }
+    },
+    "benefits": {
+        "type": "FINANCIAL_ASSISTANCE",
+        "description": "Rs. 2000 per month paid to hostel administration"
+    },
+    "documentsRequired": [
+        "Aadhar Card",
+        "Domicile Certificate (Rural)",
+        "Hostel Fee Receipt"
+    ],
+    "applicationMode": "ONLINE",
+    "isActive": true,
+    "lastUpdated": "2026-03-02T18:50:42.510604Z"
+}
