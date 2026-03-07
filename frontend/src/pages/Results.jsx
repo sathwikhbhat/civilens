@@ -201,7 +201,7 @@ const Results = () => {
                                     </div>
                                 )}
                                 <iframe
-                                    src="https://forms-o608u42it-ritviklm16-7532s-projects.vercel.app/"
+                                    src={selectedSchemeForApply.officialLink}
                                     title="Application Form"
                                     className="w-full h-full border-0"
                                     onLoad={() => setIsIframeLoading(false)}
