@@ -4,9 +4,8 @@ from agent import fill_form_with_gemini
 
 def main():
     # Define absolute paths dynamically
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'data'))
     persona_path = os.path.join(os.path.dirname(__file__), 'fake_test_persona.json')
-    forms_all_path = os.path.join(base_dir, 'forms_all.json')
+    forms_all_path = os.path.join(os.path.dirname(__file__), 'forms_all.json')
 
     print(f"Loading persona from: {persona_path}")
     try:

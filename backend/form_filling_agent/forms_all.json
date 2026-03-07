@@ -1,0 +1,1840 @@
+[
+    {
+        "schemaId": "FRM_1",
+        "schemeId": "SCH_1",
+        "formTitle": "Application Form for PM Kisan Samman Nidhi (Dummy)",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "landHoldingSizeInHectares",
+                "label": "Total Land Holding (in Hectares)",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_2",
+        "schemeId": "SCH_2",
+        "formTitle": "Application Form for National Micro-Irrigation Grant",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "landHoldingSizeInHectares",
+                "label": "Total Land Holding (in Hectares)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "irrigationType",
+                "label": "Current Irrigation Type (e.g., Unirrigated, Tube Well)",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_3",
+        "schemeId": "SCH_3",
+        "formTitle": "Application Form for Crop Loss Relief Fund",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "cropLost",
+                "label": "Name of Crop Lost",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "estimatedLossPercentage",
+                "label": "Estimated Loss Percentage",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_4",
+        "schemeId": "SCH_4",
+        "formTitle": "Application Form for Organic Farming Transition Support",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "currentFarmingMethod",
+                "label": "Current Farming Method",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "willingnessToTrain",
+                "label": "Are you willing to attend mandatory training? (Yes/No)",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_5",
+        "schemeId": "SCH_5",
+        "formTitle": "Application Form for Tractor & Farm Mechanization Subsidy",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "groupMembersCount",
+                "label": "Number of Farmers in Group",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "machineryType",
+                "label": "Type of Machinery to Purchase",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_6",
+        "schemeId": "SCH_6",
+        "formTitle": "Application Form for Pre-Matric Scholarship for Minorities",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "currentClass",
+                "label": "Current Class/Standard (1 to 10)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "previousYearPercentage",
+                "label": "Previous Year Percentage",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_7",
+        "schemeId": "SCH_7",
+        "formTitle": "Application Form for Post-Matric Girl Child Laptop Scheme",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "tenthBoardPercentage",
+                "label": "10th Board Percentage",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "schoolName",
+                "label": "Name of Government School",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_8",
+        "schemeId": "SCH_8",
+        "formTitle": "Application Form for National Vocational Training Grant",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "vocationalCourseName",
+                "label": "Name of Vocational Course",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "instituteName",
+                "label": "Institute Name",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_9",
+        "schemeId": "SCH_9",
+        "formTitle": "Application Form for Undergraduate STEM Fellowship",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "degreeName",
+                "label": "Degree Name (e.g., B.Sc, B.Tech)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "twelfthBoardPercentage",
+                "label": "12th Board Percentage",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_10",
+        "schemeId": "SCH_10",
+        "formTitle": "Application Form for Hostel Subsidy for Rural Students",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "hostelName",
+                "label": "Name of Hostel",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "monthlyHostelFee",
+                "label": "Monthly Hostel Fee (INR)",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_11",
+        "schemeId": "SCH_11",
+        "formTitle": "Application Form for Urban Street Vendor Low-Interest Credit",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "vendorIdNumber",
+                "label": "Vendor ID/Certificate Number",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "vendingLocation",
+                "label": "Usual Vending Location/Market",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_12",
+        "schemeId": "SCH_12",
+        "formTitle": "Application Form for Construction Worker Accident Insurance",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "labourRegistrationNumber",
+                "label": "Labour Board Registration Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "nomineeName",
+                "label": "Nominee Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "nomineeRelationship",
+                "label": "Relationship with Nominee",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_13",
+        "schemeId": "SCH_13",
+        "formTitle": "Application Form for Migrant Labour Transit Housing",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "homeState",
+                "label": "Home State (Origin)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "currentCityOfWork",
+                "label": "Current City of Work",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_14",
+        "schemeId": "SCH_14",
+        "formTitle": "Application Form for Women Textile Worker Maternity Benefit",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "expectedDeliveryDate",
+                "label": "Expected Date of Delivery (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "hospitalName",
+                "label": "Registered Hospital/Clinic Name",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_15",
+        "schemeId": "SCH_15",
+        "formTitle": "Application Form for Artisan Tool Modernization Scheme",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "artisanTrade",
+                "label": "Specific Trade (e.g., Weaver, Carpenter)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "yearsOfExperience",
+                "label": "Years of Experience",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_16",
+        "schemeId": "SCH_16",
+        "formTitle": "Application Form for Micro-Enterprise Startup Capital",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "proposedBusinessName",
+                "label": "Proposed Business Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "projectCostRequested",
+                "label": "Total Project Cost Requested (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "panNumber",
+                "label": "PAN Number",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_17",
+        "schemeId": "SCH_17",
+        "formTitle": "Application Form for Digital India Store Franchise Subsidy",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "gramPanchayatName",
+                "label": "Name of Gram Panchayat",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "hasComputerLiteracy",
+                "label": "Do you have a basic computer literacy certificate? (Yes/No)",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_18",
+        "schemeId": "SCH_18",
+        "formTitle": "Application Form for Women's SHG Matching Grant",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "shgName",
+                "label": "Name of Self Help Group",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "shgRegistrationNumber",
+                "label": "SHG Registration Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "totalSavingsAmount",
+                "label": "Total Savings Amount in Bank (INR)",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_19",
+        "schemeId": "SCH_19",
+        "formTitle": "Application Form for Small Business GST Compliance Support",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "gstinNumber",
+                "label": "GSTIN Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "softwareNamePurchased",
+                "label": "Name of Software Purchased",
+                "type": "string",
+                "required": true
+            }
+        ]
+    },
+    {
+        "schemaId": "FRM_20",
+        "schemeId": "SCH_20",
+        "formTitle": "Application Form for Green Tech Implementation Loan",
+        "fields": [
+            {
+                "id": "applicantFullName",
+                "label": "Applicant Full Name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "dateOfBirth",
+                "label": "Date of Birth (YYYY-MM-DD)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "gender",
+                "label": "Gender",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "aadharNumber",
+                "label": "Aadhar Number (12 Digits)",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "casteCategory",
+                "label": "Caste Category",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "addressLine1",
+                "label": "Residential Address",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "state",
+                "label": "State",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "district",
+                "label": "District",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "pincode",
+                "label": "Pincode",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankAccountNumber",
+                "label": "Bank Account Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "bankIFSC",
+                "label": "Bank IFSC Code",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "annualFamilyIncome",
+                "label": "Annual Family Income (INR)",
+                "type": "number",
+                "required": true
+            },
+            {
+                "id": "udyamRegistrationNumber",
+                "label": "Udyam Registration Number",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "currentEnergySource",
+                "label": "Current Primary Energy Source",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "proposedGreenTech",
+                "label": "Proposed Green Technology (e.g. Solar Panels)",
+                "type": "string",
+                "required": true
+            }
+        ]
+    }
+]
