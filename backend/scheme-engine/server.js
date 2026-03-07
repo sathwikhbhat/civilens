@@ -2,8 +2,12 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import dotenv from "dotenv";
+import { fileURLToPath } from "url";
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
@@ -49,7 +53,7 @@ LOAD SCHEMES
 --------------------------------
 */
 
-const schemesFolder = "./schemes";
+const schemesFolder = path.join(__dirname, "../../../data/schemes");
 
 const schemeFiles = fs.readdirSync(schemesFolder);
 
@@ -150,11 +154,12 @@ app.post("/vector-search", async (req, res) => {
     const inc = persona.incomeBracket.toLowerCase();
 
     const incomeMap = {
-      "low": "LIG",
-      "low income": "LIG",
-      "middle": "MIG",
-      "middle income": "MIG",
-      "poor": "EWS"
+      "low": "UPTO_1L",
+      "low income": "UPTO_1L",
+      "middle": "ONE_TO_3L",
+      "middle income": "THREE_TO_5L",
+      "high": "FIVE_TO_8L",
+      "poor": "UPTO_1L"
     };
 
     persona.incomeBracket = incomeMap[inc] || persona.incomeBracket;
@@ -204,7 +209,7 @@ app.post("/vector-search", async (req, res) => {
         .map(x => x.toLowerCase());
 
       if (!allowed.includes("any") &&
-          !allowed.includes(persona.state.toLowerCase())) {
+        !allowed.includes(persona.state.toLowerCase())) {
         return false;
       }
 
