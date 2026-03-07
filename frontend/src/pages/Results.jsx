@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Filter, ArrowRight, CheckCircle, ExternalLink, GraduationCap, HeartPulse, Building2, UserCircle, Briefcase } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Filter, ArrowRight, CheckCircle, ExternalLink, GraduationCap, HeartPulse, Building2, UserCircle, Briefcase, X, Loader2 } from 'lucide-react';
 
 const Results = () => {
     const location = useLocation();
@@ -12,6 +12,22 @@ const Results = () => {
     const dynamicallyMatchedSchemes = location.state?.schemes || [];
 
     const [activeFilter, setActiveFilter] = useState('All');
+    const [selectedSchemeForApply, setSelectedSchemeForApply] = useState(null);
+    const [isIframeLoading, setIsIframeLoading] = useState(true);
+
+    useEffect(() => {
+        const handleMessage = (event) => {
+            // Check for the specific form submission action sent by the iframe
+            if (event.data?.action === 'FORM_SUBMITTED') {
+                console.log("Application via iframe submitted:", event.data);
+                alert("Application Auto-Filled & Submitted Successfully!");
+                setSelectedSchemeForApply(null); // Close the modal
+            }
+        };
+
+        window.addEventListener('message', handleMessage);
+        return () => window.removeEventListener('message', handleMessage);
+    }, []);
 
     // Derive categories dynamically from properties
     const availableCategories = ['All', ...new Set(dynamicallyMatchedSchemes.map(s => s.category).filter(Boolean))];
@@ -124,15 +140,15 @@ const Results = () => {
                                 <button className="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">
                                     Details
                                 </button>
-                                {scheme.officialLink ? (
-                                    <a href={scheme.officialLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold text-primary-600 bg-white hover:bg-primary-50 px-4 py-2 rounded-lg border border-primary-100 transition-colors shadow-sm">
-                                        Apply <ExternalLink size={14} />
-                                    </a>
-                                ) : (
-                                    <button className="flex items-center gap-2 text-sm font-bold text-slate-400 bg-slate-100 px-4 py-2 rounded-lg border border-slate-200 cursor-not-allowed">
-                                        Draft <ExternalLink size={14} />
-                                    </button>
-                                )}
+                                <button
+                                    onClick={() => {
+                                        setSelectedSchemeForApply(scheme);
+                                        setIsIframeLoading(true);
+                                    }}
+                                    className="flex items-center gap-2 text-sm font-bold text-white bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded-lg transition-colors shadow-sm"
+                                >
+                                    Apply Now <ExternalLink size={14} />
+                                </button>
                             </div>
                         </motion.div>
                     ))}
@@ -146,6 +162,57 @@ const Results = () => {
                 )}
 
             </div>
+
+            {/* Application Iframe Modal */}
+            <AnimatePresence>
+                {selectedSchemeForApply && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 sm:p-6"
+                    >
+                        <motion.div
+                            initial={{ scale: 0.95, y: 20 }}
+                            animate={{ scale: 1, y: 0 }}
+                            exit={{ scale: 0.95, y: 20 }}
+                            className="bg-white w-full max-w-4xl h-[85vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+                        >
+                            {/* Modal Header */}
+                            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/80">
+                                <div>
+                                    <h3 className="text-lg font-bold text-slate-900 line-clamp-1">{selectedSchemeForApply.title}</h3>
+                                    <p className="text-xs font-medium text-primary-600">Auto-fill Application Form</p>
+                                </div>
+                                <button
+                                    onClick={() => setSelectedSchemeForApply(null)}
+                                    className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-200 rounded-full transition-colors"
+                                >
+                                    <X size={20} />
+                                </button>
+                            </div>
+
+                            {/* Modal Body (Iframe) */}
+                            <div className="relative flex-1 bg-slate-50">
+                                {isIframeLoading && (
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                                        <Loader2 className="w-10 h-10 text-primary-600 animate-spin mb-4" />
+                                        <p className="text-sm font-medium text-slate-500">Connecting to secure form portal...</p>
+                                    </div>
+                                )}
+                                <iframe
+                                    src="https://forms-o608u42it-ritviklm16-7532s-projects.vercel.app/"
+                                    title="Application Form"
+                                    className="w-full h-full border-0"
+                                    onLoad={() => setIsIframeLoading(false)}
+                                    allow="camera; microphone"
+                                />
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
         </div>
     );
 };
