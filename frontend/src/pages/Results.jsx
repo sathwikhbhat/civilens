@@ -15,6 +15,7 @@ const Results = () => {
     const [selectedSchemeForApply, setSelectedSchemeForApply] = useState(null);
     const [isIframeLoading, setIsIframeLoading] = useState(true);
     const [isAutofilling, setIsAutofilling] = useState(false);
+    const formFillingBaseUrl = import.meta.env.VITE_APP_FORM_FILLING_URL;
 
     useEffect(() => {
         const handleMessage = async (event) => {
@@ -29,7 +30,7 @@ const Results = () => {
                     const schema = event.data.schema;
                     console.log("Extracted schema from dummy portal:", schema);
 
-                    const response = await fetch("http://localhost:8000/api/autofill", {
+                    const response = await fetch(`${formFillingBaseUrl}/api/autofill`, {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({

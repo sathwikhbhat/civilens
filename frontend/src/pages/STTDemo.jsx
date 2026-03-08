@@ -14,12 +14,13 @@ function STTDemo() {
     const [persona, setPersona] = useState(personaTemplate);
     const [question, setQuestion] = useState("Tell me about yourself.");
     const [currentField, setCurrentField] = useState(null);
+    const sttTokenUrl = import.meta.env.VITE_APP_STT_TOKEN_URL;
 
     const startListening = async () => {
         try {
             setStatus("Fetching speech token...");
 
-            const res = await fetch("http://localhost:7071/api/speechToken");
+            const res = await fetch(sttTokenUrl);
             if (!res.ok) {
                 throw new Error(`Token fetch failed: ${res.status}`);
             }
