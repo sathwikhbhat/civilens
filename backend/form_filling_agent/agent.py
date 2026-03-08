@@ -4,8 +4,8 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
-# Define standard relative path to the root .env file for the repository
-env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '.env'))
+# Define standard relative path to the backend .env file
+env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.env'))
 load_dotenv(dotenv_path=env_path)
 
 def fill_form_with_gemini(persona_data: dict, empty_form_schema: dict) -> dict:
