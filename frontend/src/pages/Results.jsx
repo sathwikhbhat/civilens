@@ -14,20 +14,51 @@ const Results = () => {
     const [activeFilter, setActiveFilter] = useState('All');
     const [selectedSchemeForApply, setSelectedSchemeForApply] = useState(null);
     const [isIframeLoading, setIsIframeLoading] = useState(true);
+    const [isAutofilling, setIsAutofilling] = useState(false);
 
     useEffect(() => {
-        const handleMessage = (event) => {
+        const handleMessage = async (event) => {
             // Check for the specific form submission action sent by the iframe
             if (event.data?.action === 'FORM_SUBMITTED') {
                 console.log("Application via iframe submitted:", event.data);
                 alert("Application Auto-Filled & Submitted Successfully!");
                 setSelectedSchemeForApply(null); // Close the modal
+            } else if (event.data?.type === 'EXTRACTED_FORM_SCHEMA') {
+                setIsAutofilling(true);
+                try {
+                    const schema = event.data.schema;
+                    console.log("Extracted schema from dummy portal:", schema);
+
+                    const response = await fetch("http://localhost:8000/api/autofill", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            persona: personaData,
+                            form_schema: schema
+                        })
+                    });
+
+                    const filledData = await response.json();
+
+                    // Send filled data back to iframe
+                    const iframe = document.getElementById("applicationIframe");
+                    if (iframe && iframe.contentWindow) {
+                        iframe.contentWindow.postMessage({
+                            type: 'AUTOFILL_FORM_DATA',
+                            data: filledData
+                        }, '*');
+                    }
+                } catch (error) {
+                    console.error("Autofill failed:", error);
+                } finally {
+                    setIsAutofilling(false);
+                }
             }
         };
 
         window.addEventListener('message', handleMessage);
         return () => window.removeEventListener('message', handleMessage);
-    }, []);
+    }, [personaData]);
 
     // Derive categories dynamically from properties
     const availableCategories = ['All', ...new Set(dynamicallyMatchedSchemes.map(s => s.category).filter(Boolean))];
@@ -201,6 +232,7 @@ const Results = () => {
                                     </div>
                                 )}
                                 <iframe
+                                    id="applicationIframe"
                                     src={selectedSchemeForApply.officialLink}
                                     title="Application Form"
                                     className="w-full h-full border-0"
