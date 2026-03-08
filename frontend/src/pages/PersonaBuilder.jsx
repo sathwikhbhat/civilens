@@ -150,7 +150,7 @@ const PersonaBuilder = () => {
         }
 
         try {
-            const backendBaseUrl = import.meta.env.VITE_APP_BACKEND_URL || import.meta.env.VITE_APP_SCHEME_ENGINE_BASE_URL || 'https://swagger-8fzm.onrender.com';
+            const backendBaseUrl = import.meta.env.VITE_APP_BACKEND_URL;
 
             const response = await fetch(`${backendBaseUrl}/detect`, {
                 method: 'POST',

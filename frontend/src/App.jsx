@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/form" element={<PersonaBuilder />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/schemes" element={<Results />} />
           <Route path="/stt" element={<STTDemo />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
